@@ -6,7 +6,7 @@
 
 2.用canvas画出圆形区域
 
-·var wave = document.getElementById('wave');
+`var wave = document.getElementById('wave');
  var canvas = document.createElement('canvas')
  if (!canvas.getContext) return;
  ctx = canvas.getContext('2d');
@@ -14,11 +14,11 @@
  canvasHeight = wave.offsetHeight;
  canvas.setAttribute('width', canvasWidth);
  canvas.setAttribute('height', canvasHeight);
- wave.appendChild(canvas);·
+ wave.appendChild(canvas);`
  
  3.给图片增加相应的动画
  
- ·function loop () {
+ `function loop () {
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	if (!needAnimate) return;
 	if (waveY < waveY_max) waveY += 1.5;
@@ -34,4 +34,5 @@
 	            ctx.drawImage(waveImage, waveX, canvasHeight - 0.5*waveY);
 	            
 	            requestAnimationFrame(loop);
-	        }·
+	        }`
+
