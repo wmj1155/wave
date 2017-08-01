@@ -7,13 +7,21 @@
 2.用canvas画出圆形区域
 
 `var wave = document.getElementById('wave');
+
  var canvas = document.createElement('canvas')
+ 
  if (!canvas.getContext) return;
+ 
  ctx = canvas.getContext('2d');
+ 
  canvasWidth = wave.offsetWidth;
+ 
  canvasHeight = wave.offsetHeight;
+ 
  canvas.setAttribute('width', canvasWidth);
+ 
  canvas.setAttribute('height', canvasHeight);
+ 
  wave.appendChild(canvas);`
  
  3.给图片增加相应的动画
